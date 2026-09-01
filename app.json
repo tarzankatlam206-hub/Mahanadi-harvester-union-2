@@ -3,9 +3,14 @@
     "name": "महानदी हार्वेस्टर संघ",
     "slug": "mahanadi-harvester",
     "version": "1.0.1",
+    "splash": {
+      "backgroundColor": "#ffffff",
+      "resizeMode": "contain"
+    },
     "android": {
       "package": "com.mahanadiharvester.app",
-      "versionCode": 2,
+      "versionCode": 3,
+      "backgroundColor": "#ffffff",
       "enableProguardInReleaseBuilds": false,
       "enableShrinkResourcesInReleaseBuilds": false
     }
