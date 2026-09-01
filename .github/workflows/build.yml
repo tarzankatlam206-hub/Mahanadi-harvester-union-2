@@ -1,4 +1,4 @@
-name: Build Signed APK
+name: Build Small APK
 on:
   push:
     branches: [main]
@@ -15,9 +15,9 @@ jobs:
           distribution: temurin
           java-version: 17
       - run: npm install
-      - run: npm install -g eas-cli
-      - run: eas build --platform android --profile preview --local --non-interactive --output./app-signed.apk
+      - run: npx expo prebuild --clean --platform android --no-install
+      - run: cd android && chmod +x gradlew &&./gradlew assembleDebug -PreactNativeArchitectures=arm64-v8a
       - uses: actions/upload-artifact@v4
         with:
-          name: signed-apk
-          path:./app-signed.apk
+          name: small-apk
+          path: android/app/build/outputs/apk/debug/app-arm64-v8a-debug.apk
