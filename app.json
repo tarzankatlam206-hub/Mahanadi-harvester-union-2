@@ -7,14 +7,7 @@
       "package": "com.mahanadiharvester.app",
       "versionCode": 2,
       "enableProguardInReleaseBuilds": false,
-      "enableShrinkResourcesInReleaseBuilds": false,
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
-    },
-    "plugins": [
-      "expo-secure-store"
-    ]
+      "enableShrinkResourcesInReleaseBuilds": false
+    }
   }
 }
